@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: environment_combined.ma
-//Last modified: Wed, Aug 05, 2015 01:01:28 AM
+//Last modified: Wed, Aug 05, 2015 03:41:56 AM
 //Codeset: 1252
 requires maya "2015";
 requires -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
