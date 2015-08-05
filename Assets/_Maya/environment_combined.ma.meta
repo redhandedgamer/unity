@@ -1,0 +1,116 @@
+fileFormatVersion: 2
+guid: a2f8516a23f9ed64cb4a126776992b97
+timeCreated: 1438659127
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bamboo_stalk_ORIGINAL
+    100002: environment
+    100004: //RootNode
+    100006: pagoda_ORIGINAL
+    100008: bamboo_stalk
+    100010: coin
+    100012: ninja_star
+    100014: bamboo_root
+    100016: bamboo_root_ctrl
+    100018: bamboo_root_pad
+    100020: bamboo_top
+    100022: bamboo_top_ctrl
+    100024: bamboo_top_pad
+    400000: bamboo_stalk_ORIGINAL
+    400002: environment
+    400004: //RootNode
+    400006: pagoda_ORIGINAL
+    400008: bamboo_stalk
+    400010: coin
+    400012: ninja_star
+    400014: bamboo_root
+    400016: bamboo_root_ctrl
+    400018: bamboo_root_pad
+    400020: bamboo_top
+    400022: bamboo_top_ctrl
+    400024: bamboo_top_pad
+    2300000: bamboo_stalk_ORIGINAL
+    2300002: environment
+    2300004: pagoda_ORIGINAL
+    2300006: bamboo_stalk
+    2300008: coin
+    2300010: ninja_star
+    3300000: bamboo_stalk_ORIGINAL
+    3300002: environment
+    3300004: pagoda_ORIGINAL
+    3300006: bamboo_stalk
+    3300008: coin
+    3300010: ninja_star
+    4300000: bamboo_stalk_ORIGINAL
+    4300002: pagoda_ORIGINAL
+    4300004: environment
+    4300006: bamboo_stalk
+    4300008: ninja_star
+    4300010: coin
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bamboo_stalk
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
