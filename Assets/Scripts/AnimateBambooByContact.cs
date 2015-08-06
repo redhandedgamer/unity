@@ -5,7 +5,7 @@ public class AnimateBambooByContact : MonoBehaviour {
 
 	public Animator animator;
 
-	// play this Trigger from Bamboo Animator
+	//play this Trigger from Bamboo Animator
 	public void PlayChopEvent(){
 		animator.SetTrigger("Chop");
 
@@ -16,8 +16,8 @@ public class AnimateBambooByContact : MonoBehaviour {
 		//play animation
 		PlayChopEvent();
 
-
-		StartCoroutine(DestroyBamboo(1.5f));
+		//run Coroutine to destroy bamboo instance after given time
+		StartCoroutine(DestroyBamboo(1.25f));
 
 		//play VFX
 
@@ -26,17 +26,11 @@ public class AnimateBambooByContact : MonoBehaviour {
 
 	public IEnumerator DestroyBamboo(float t){
 
+		//waits t seconds chosen in OnTriggerEnter function
 		yield return new WaitForSeconds(t);
 
+		//destroys bamboo
 		Destroy(gameObject);
 
 	}
-
-
-	void Update(){
-
-
-
-	}
-
 }
