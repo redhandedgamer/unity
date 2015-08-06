@@ -8,7 +8,7 @@ public class DestroyProjectileByBoundary : MonoBehaviour {
 		if(other.tag == "Bamboo")
 			return;
 
-		Debug.Log("Destroyed this object: " + other.gameObject);
+		//Debug.Log("Destroyed this object: " + other.gameObject);
 		Destroy(other.gameObject);
 
 	}

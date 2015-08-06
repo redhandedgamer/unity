@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
 		if(Input.GetButton("Fire1") && Time.time > nextShot){
 			nextShot = Time.time + shotRate;
 			GameObject clone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
+			clone.name = "ThrowingStar";
 		}
 	}
 
