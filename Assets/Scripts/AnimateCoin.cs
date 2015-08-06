@@ -11,7 +11,7 @@ public class AnimateCoin : MonoBehaviour {
 		
 	}
 	
-	public void OnTriggerEnter(Collider other){
+	public void Start(){
 		
 		//play animation
 		PlaySpinEvent();

@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 	public float shotRate;
 	private float nextShot;
 
+	//create a Projectile on left-click if shot is off its "cooldown"
 	void Update(){
 		if(Input.GetButton("Fire1") && Time.time > nextShot){
 			nextShot = Time.time + shotRate;
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour {
 		//clamping movement in game space
 		GetComponent<Rigidbody>().position = new Vector3
 		(
-			8.6f,
+			7.8f,
 			1.3f,
 			Mathf.Clamp (GetComponent<Rigidbody>().position.z, bounds.zMin, bounds.zMax)
 		);

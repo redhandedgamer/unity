@@ -10,14 +10,14 @@ public class GameController : MonoBehaviour {
 	public float startWait;
 	public float waveWait;
 
-	// call spawn bamboo on first frame
+	//call spawn bamboo on first frame
 	void Start(){
 		StartCoroutine(SpawnBamboo());
 	}
 
 	IEnumerator SpawnBamboo(){
 
-		// waits this many seconds before starting to spawn the bamboo
+		//waits this many seconds before starting to spawn the bamboo
 		yield return new WaitForSeconds(startWait);
 
 		while(true){

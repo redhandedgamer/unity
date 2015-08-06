@@ -4,6 +4,9 @@ using System.Collections;
 public class AnimateBambooByContact : MonoBehaviour {
 
 	public Animator animator;
+	public GameObject coin;
+	public Transform coinSpawn;
+	public float destroyTime = 1.5f;
 
 	//play this Trigger from Bamboo Animator
 	public void PlayChopEvent(){
@@ -17,9 +20,10 @@ public class AnimateBambooByContact : MonoBehaviour {
 		PlayChopEvent();
 
 		//run Coroutine to destroy bamboo instance after given time
-		StartCoroutine(DestroyBamboo(1.25f));
+		StartCoroutine(DestroyBamboo(destroyTime));
 
-		//play VFX
+		//spawn coin
+		Instantiate(coin, coinSpawn.position, coinSpawn.rotation);
 
 
 	}

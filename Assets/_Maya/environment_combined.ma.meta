@@ -23,6 +23,31 @@ ModelImporter:
     100030: coin_root
     100032: coin_root_ctrl
     100034: coin_root_pad
+    100036: Bamboo
+    100038: Bamboo_ORIGINAL
+    100040: Bamboo_Rig
+    100042: Bamboo_Root
+    100044: Bamboo_Root_Ctrl
+    100046: Bamboo_Root_Pad
+    100048: Bamboo_Top
+    100050: Bamboo_Top_Ctrl
+    100052: Bamboo_Top_Pad
+    100054: Coin
+    100056: Coin_Rig
+    100058: Coin_Root
+    100060: Coin_Root_Ctrl
+    100062: Coin_Root_Pad
+    100064: Environment
+    100066: Ninja_Star
+    100068: Pagoda_ORIGINAL
+    100070: Bamboo_Mesh
+    100072: Coin_Mesh
+    100074: Controls
+    100076: Environment_Mesh
+    100078: Ninja_Star_Mesh
+    100080: Rig_Controls
+    100082: Skeleton
+    100084: Skeleton 1
     400000: bamboo_stalk_ORIGINAL
     400002: environment
     400004: //RootNode
@@ -41,28 +66,79 @@ ModelImporter:
     400030: coin_root
     400032: coin_root_ctrl
     400034: coin_root_pad
+    400036: Bamboo
+    400038: Bamboo_ORIGINAL
+    400040: Bamboo_Rig
+    400042: Bamboo_Root
+    400044: Bamboo_Root_Ctrl
+    400046: Bamboo_Root_Pad
+    400048: Bamboo_Top
+    400050: Bamboo_Top_Ctrl
+    400052: Bamboo_Top_Pad
+    400054: Coin
+    400056: Coin_Rig
+    400058: Coin_Root
+    400060: Coin_Root_Ctrl
+    400062: Coin_Root_Pad
+    400064: Environment
+    400066: Ninja_Star
+    400068: Pagoda_ORIGINAL
+    400070: Bamboo_Mesh
+    400072: Coin_Mesh
+    400074: Controls
+    400076: Environment_Mesh
+    400078: Ninja_Star_Mesh
+    400080: Rig_Controls
+    400082: Skeleton
+    400084: Skeleton 1
     2300000: bamboo_stalk_ORIGINAL
     2300002: environment
     2300004: pagoda_ORIGINAL
     2300006: bamboo_stalk
     2300008: coin
     2300010: ninja_star
+    2300012: Bamboo_ORIGINAL
+    2300014: Environment
+    2300016: Ninja_Star
+    2300018: Pagoda_ORIGINAL
+    2300020: Environment_Mesh
+    2300022: Ninja_Star_Mesh
     3300000: bamboo_stalk_ORIGINAL
     3300002: environment
     3300004: pagoda_ORIGINAL
     3300006: bamboo_stalk
     3300008: coin
     3300010: ninja_star
+    3300012: Bamboo_ORIGINAL
+    3300014: Environment
+    3300016: Ninja_Star
+    3300018: Pagoda_ORIGINAL
+    3300020: Environment_Mesh
+    3300022: Ninja_Star_Mesh
     4300000: bamboo_stalk_ORIGINAL
     4300002: pagoda_ORIGINAL
     4300004: environment
     4300006: bamboo_stalk
     4300008: ninja_star
     4300010: coin
+    4300012: Bamboo_ORIGINAL
+    4300014: Pagoda_ORIGINAL
+    4300016: Environment
+    4300018: Ninja_Star
+    4300020: Bamboo
+    4300022: Coin
+    4300024: Environment_Mesh
+    4300026: Ninja_Star_Mesh
+    4300028: Bamboo_Mesh
+    4300030: Coin_Mesh
     7400000: Take 001
     9500000: //RootNode
     13700000: bamboo_stalk
     13700002: coin
+    13700004: Bamboo
+    13700006: Coin
+    13700008: Bamboo_Mesh
+    13700010: Coin_Mesh
   materials:
     importMaterials: 1
     materialName: 0

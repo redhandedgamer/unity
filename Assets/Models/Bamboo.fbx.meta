@@ -1,35 +1,36 @@
 fileFormatVersion: 2
 guid: f0973898dff26604c9ec0eb7b11c9705
-timeCreated: 1438707685
+timeCreated: 1438839030
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: bamboo_root
-    100004: bamboo_root_ctrl
-    100006: bamboo_root_pad
-    100008: bamboo_stalk
-    100010: bamboo_top
-    100012: bamboo_top_ctrl
-    100014: bamboo_top_pad
+    100004: bamboo_stalk
+    100006: bamboo_top
+    100008: Bamboo_Mesh
+    100010: Bamboo_Rig
+    100012: Bamboo_Root
+    100014: Bamboo_Top
+    100016: Skeleton
     400000: //RootNode
     400002: bamboo_root
-    400004: bamboo_root_ctrl
-    400006: bamboo_root_pad
-    400008: bamboo_stalk
-    400010: bamboo_top
-    400012: bamboo_top_ctrl
-    400014: bamboo_top_pad
-    2300000: //RootNode
-    2300002: bamboo_stalk
-    3300000: //RootNode
-    3300002: bamboo_stalk
+    400004: bamboo_stalk
+    400006: bamboo_top
+    400008: Bamboo_Mesh
+    400010: Bamboo_Rig
+    400012: Bamboo_Root
+    400014: Bamboo_Top
+    400016: Skeleton
     4300000: bamboo_stalk
+    4300002: Bamboo_Mesh
     7400000: Chop
     7400002: Idle
+    7400004: Death
     9500000: //RootNode
     13700000: bamboo_stalk
+    13700002: Bamboo_Mesh
   materials:
     importMaterials: 0
     materialName: 0
@@ -43,7 +44,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -54,7 +55,7 @@ ModelImporter:
       name: Chop
       takeName: Take 001
       firstFrame: 2
-      lastFrame: 90
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -76,11 +77,15 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: bamboo_root
+      - path: Bamboo_Mesh
         weight: 1
-      - path: bamboo_root/bamboo_top
+      - path: Bamboo_Rig
         weight: 1
-      - path: bamboo_stalk
+      - path: Bamboo_Rig/Skeleton
+        weight: 1
+      - path: Bamboo_Rig/Skeleton/Bamboo_Root
+        weight: 1
+      - path: Bamboo_Rig/Skeleton/Bamboo_Root/Bamboo_Top
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -110,11 +115,53 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: bamboo_root
+      - path: Bamboo_Mesh
         weight: 1
-      - path: bamboo_root/bamboo_top
+      - path: Bamboo_Rig
         weight: 1
-      - path: bamboo_stalk
+      - path: Bamboo_Rig/Skeleton
+        weight: 1
+      - path: Bamboo_Rig/Skeleton/Bamboo_Root
+        weight: 1
+      - path: Bamboo_Rig/Skeleton/Bamboo_Root/Bamboo_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 88
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bamboo_Mesh
+        weight: 1
+      - path: Bamboo_Rig
+        weight: 1
+      - path: Bamboo_Rig/Skeleton
+        weight: 1
+      - path: Bamboo_Rig/Skeleton/Bamboo_Root
+        weight: 1
+      - path: Bamboo_Rig/Skeleton/Bamboo_Root/Bamboo_Top
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -153,7 +200,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: bamboo_root
+    rootMotionBoneName: Bamboo_Root
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   additionalBone: 0

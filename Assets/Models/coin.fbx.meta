@@ -9,19 +9,29 @@ ModelImporter:
     100002: coin
     100004: coin_rig
     100006: coin_root
+    100008: Coin_Mesh
+    100010: Coin_Rig
+    100012: Coin_Root
+    100014: Skeleton
     400000: //RootNode
     400002: coin
     400004: coin_rig
     400006: coin_root
+    400008: Coin_Mesh
+    400010: Coin_Rig
+    400012: Coin_Root
+    400014: Skeleton
     2300000: //RootNode
     2300002: coin
     3300000: //RootNode
     3300002: coin
     4300000: coin
+    4300002: Coin_Mesh
     7400000: Idle
     7400002: Spin
     9500000: //RootNode
     13700000: coin
+    13700002: Coin_Mesh
   materials:
     importMaterials: 0
     materialName: 0
@@ -68,11 +78,13 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: coin
+      - path: Coin_Mesh
         weight: 1
-      - path: coin_rig
+      - path: Coin_Rig
         weight: 1
-      - path: coin_rig/coin_root
+      - path: Coin_Rig/Skeleton
+        weight: 1
+      - path: Coin_Rig/Skeleton/Coin_Root
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -102,11 +114,13 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: coin
+      - path: Coin_Mesh
         weight: 1
-      - path: coin_rig
+      - path: Coin_Rig
         weight: 1
-      - path: coin_rig/coin_root
+      - path: Coin_Rig/Skeleton
+        weight: 1
+      - path: Coin_Rig/Skeleton/Coin_Root
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -145,7 +159,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: coin_rig
+    rootMotionBoneName: Coin_Root
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   additionalBone: 0
