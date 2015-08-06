@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour {
 		//clamping movement in game space
 		GetComponent<Rigidbody>().position = new Vector3
 		(
-			7.8f,
+			7.5f,
 			1.3f,
 			Mathf.Clamp (GetComponent<Rigidbody>().position.z, bounds.zMin, bounds.zMax)
 		);

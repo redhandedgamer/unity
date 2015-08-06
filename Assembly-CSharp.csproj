@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimateCoin.cs" />
      <Compile Include="Assets\Scripts\BambooController.cs" />
+     <Compile Include="Assets\Scripts\DestroyByLifeTime.cs" />
      <Compile Include="Assets\Scripts\DestroyProjectileByBoundary.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />

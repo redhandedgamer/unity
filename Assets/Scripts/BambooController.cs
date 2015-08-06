@@ -5,11 +5,24 @@ public class BambooController : MonoBehaviour {
 
 	public Animator animator;
 	public GameObject coin;
-	public GameObject bambooMesh;
-	public ParticleSystem woodChipper;
-	public ParticleSystem deathSmoke;
+	//public GameObject bambooMesh;
+	public GameObject smokeFX;
+	public ParticleSystem woodChipFX;
+	public ParticleSystem leavesFX;
+	public Transform smokeSpawn;
 	public Transform coinSpawn;
 	public float destroyTime = 1.5f;
+	public int scoreValue;
+	private GameController gameController;
+
+	//find gameObject that holds gameController script, check for exist
+	void Start(){
+		GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+		if(gameControllerObject != null)
+			gameController = gameControllerObject.GetComponent<GameController>();
+		if(gameController == null)
+			Debug.Log ("Cannot find 'GameController' script");
+	}
 
 	//play this Trigger from Bamboo Animator
 	public void PlayChopEvent(){
@@ -28,19 +41,28 @@ public class BambooController : MonoBehaviour {
 		//spawn coin
 		Instantiate(coin, coinSpawn.position, coinSpawn.rotation);
 
+		//increase score
+		gameController.AddScore(scoreValue);
+
 	}
 
 	public void OnTriggerStay(Collider other){
 
-		//enabled emission rate during contact
-		woodChipper.emissionRate = 100;
+		//enabled emission rate while Ninja Star is colliding
+		woodChipFX.emissionRate = 200;
+		leavesFX.emissionRate = 200;
 	}
 	
 	public void OnTriggerExit(Collider other){
-		
-		woodChipper.emissionRate = 0;
-	}
 
+		//disables emission rate after Ninja Star leaves collider
+		woodChipFX.emissionRate = 0;
+		leavesFX.emissionRate = 0;
+
+		//delete the Collider to prevent multiple triggers of this function on same prefab
+		Destroy(GetComponent<Collider>());
+
+	}
 
 	public IEnumerator DestroyBamboo(float t){
 
@@ -48,14 +70,7 @@ public class BambooController : MonoBehaviour {
 		yield return new WaitForSeconds(t);
 
 		//play poof_FX
-		deathSmoke.gameObject.SetActive(true);
-
-		//wait for full duration
-		yield return new WaitForSeconds(deathSmoke.duration);
-
-		//turn off renderer so object only disappears
-		bambooMesh.GetComponent<Renderer>().enabled = false;
-		yield return new WaitForSeconds(deathSmoke.startLifetime);
+		Instantiate(smokeFX, smokeSpawn.position, smokeSpawn.rotation);
 
 		//destroys bamboo
 		Destroy(gameObject);
